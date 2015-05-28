@@ -6,9 +6,9 @@ FROM index.alauda.cn/yimiyan/solr-td
 MAINTAINER yimiyancui@163.com
 
 # start service
-#RUN cd /usr/local/tomcat/webapps/ROOT/ ; wget http://apache.claz.org/lucene/solr/4.9.1/solr-4.9.1.zip 
-
-#RUN cd /usr/local/tomcat/webapps/ROOT/ ; unzip solr-5.1.0.zip
+RUN cd /data/; wget  --no-check-certificate  https://github.com/cuiyan/solr-tp-xc/blob/master/solrData/solr.tar.gz
+RUN cd /data/; rm -rf solr
+RUN cd /data ; tar -zvxf solr.tar.gz
 
 
 # expose memcached port
