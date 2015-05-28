@@ -5,7 +5,7 @@ FROM index.alauda.cn/yimiyan/solr-td
 
 MAINTAINER yimiyancui@163.com
 
-# start servicae
+# start service
 #RUN cd /usr/local/tomcat/webapps/ROOT/ ; wget http://apache.claz.org/lucene/solr/4.9.1/solr-4.9.1.zip 
 
 #RUN cd /usr/local/tomcat/webapps/ROOT/ ; unzip solr-5.1.0.zip
