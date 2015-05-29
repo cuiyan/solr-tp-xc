@@ -13,6 +13,6 @@ RUN cd /data ; tar -zvxf solr.tar.gz
 
 # expose memcached port
 EXPOSE 80
-
+EXPOSE 22
 
 CMD   (sh /usr/local/tomcat8081/bin/startup.sh ) && (tail -f /usr/local/tomcat8081/logs/catalina.out)
